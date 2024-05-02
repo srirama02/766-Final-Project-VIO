@@ -45,11 +45,20 @@
 3. **Reality Environment**:
    - Setup in a motion capture room with real vehicle, stereo camera (ZED), and IMU (Wheeltec N-100).
 
-## Challenges and Solutions
+<img width="718" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/a35ee377-78ff-4751-a0ba-9841f7470323">
 
-### Simulation Environment Generation
-- Issues with room mesh generation in Blender and NeRFs.
-- Camera and IMU parameter calibration and noisy IMU readings.
+## Simulation Environmnet
+- Demo of the vehicle driving around in generated simulation environment
+- The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
+- The 3D mesh shown in the simulation is generated in Blender
+<img width="690" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/a7453723-8a02-48f0-9412-67b79d1800b6">
+
+
+## Challenges in Simulation Environment Generation
+
+### Simulation Room Mesh
+- Due to NeRFs not outputing the actual mesh, it does not work with Chrono::Sensor.
+- Tried to do NeRF to mesh conversion, but did not have luck with it.
 
 ### VO/VIO Algorithms
 - Dependency and integration challenges with VINS-Fusion and AirVO.
