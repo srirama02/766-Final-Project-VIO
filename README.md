@@ -1,5 +1,4 @@
-# Estimating the Sim2Real Gap for Camera Simulation
-### With Existing Visual Odometry Algorithms as a Judge
+# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
 #### By Sriram Ashokumar and Huzaifa Unjhawala
 
 ## Goal
@@ -9,7 +8,16 @@
   - High fidelity
   - Models FOV and Radial distortion
   - Aperture Vignetting
-- Objective: To assess the efficacy of the Camera Sensor models in Project Chrono for robotics applications.
+- Objective: To assess how good the camera sensor models are in Project Chrono for robotics applications.
+<img width="282" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/0610bf9a-226c-46ef-b324-b132e2a61416">
+
+<img width="249" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/61d1e842-fa87-4b2e-ab4f-a0205039bbff">
+
+<img width="249" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/937fa03c-ed7e-45a2-949f-844ac6d0a5db">
+
+<img width="178" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/e97d4322-3a4a-48d4-9774-76cf6ce3a580">
+
+
 
 ## Validating Camera Models
 
@@ -17,18 +25,16 @@
 1. **Pixel-wise differences**:
    - Ensures that pictures from the camera sensor look very similar to those from a real camera.
 2. **In-the-loop performance differences**:
-   - Evaluates how the quality of the image generated affects the performance of downstream tasks, which is more relevant in robotics.
+   - Evaluate how the quality of the image generated affects the performance of downstream tasks, which is more relevant in robotics.
+<img width="342" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/af83e6fe-ebdb-4d10-9848-911ff729a054">
+<img width="332" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/bdd3b572-72ad-48f6-a954-f10d77d159d5">
+
 
 ## Our Evaluation Approach
 
 - Use a **VIO algorithm** as a "judge" to evaluate our camera models.
-- Comparison setup:
-  - **Simulated Camera + IMU vs. Real Camera + IMU**
-  - Metrics used:
-    - Drift error in sim and real setups
-    - Distribution of errors using Wasserstein Distance
-    - Sim2real score
-  - This process is repeated across various environments.
+<img width="1163" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/d5261081-341d-469d-b71b-0a5aa1d31bb3">
+
 
 ## Major Components
 
