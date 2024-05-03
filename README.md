@@ -56,14 +56,7 @@ https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/f8a62c5f-da2d
 
 Or available [here](https://drive.google.com/file/d/1ZvL5P4deNLsipzVci7Zg_4PReqeX4EMU/view?usp=sharing)
 
-<!DOCTYPE html>
-<html>
-<body>
-<div class="row video">
-  <iframe id="video" width="560" height="315" src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-</div>
-</body>
-</html>
+<iframe src="https://drive.google.com/file/d/1ZvL5P4deNLsipzVci7Zg_4PReqeX4EMU/preview" width="640" height="480" allow="autoplay"></iframe>
 
 
 
