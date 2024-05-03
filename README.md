@@ -60,9 +60,31 @@
 - Due to NeRFs not outputing the actual mesh, it does not work with Chrono::Sensor.
 - Tried to do NeRF to mesh conversion, but did not have luck with it.
 
-### VO/VIO Algorithms
+### Camera Extrinisic and intrinsic parameter calibration
+- Able to get camera relative pose to IMU/body frame available from simulator
+- Camera intrinsic parameters and distortion parameters obtaiend through simulation experiment using the OpenCV camera calibration script
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/a45ab883-029a-4c10-97e0-714ae153cead)
+
+### IMU accelerations are very noisy
+- Even when 0 noise is set the acclerations are very noisy in simulation. This is due to the noisy DAE (Differential algebraic equation) solver that solves the dynamics equations
+- To fix this we used a additional "IMU smoothing node" which reads the IMU readings at 1000 Hz from sim and publishes a rolling average at 100 Hz
+
+
+## VO/VIO Algorithms
+To decide which algorithm to test, a literature review was performed and 10 algorihtms were picked based on interest and popularity.
+Two algorithms were chosen from that group based on:
+- Performace on standard datasets as we wanted test the algorithms that perform the best
+- Whether it is deep learning based or optimization based as we wanted one of each kind
+- Computation requirements as we want to run it in real time
+- Sensor requirements - we wanted to try both VO and VIO
+
+### Algorithms Chosen:
+- VINS-Fusion (2020) - Optimization based VIO - Stereo Camera + IMU
+- AirVIO (2023) - Optimization + DL based VO - Stereo Camera
+
+### Challenges with VO/VIO algorithms
 - Dependency and integration challenges with VINS-Fusion and AirVO.
-- Conversion of algorithms for ROS2 compatibility.
+- Due to our autonomy stack using ROS2, we need to convert the algorithms into ROS2 as AirVO is only available in ROS1.
 
 ## Future Steps (Before May 3)
 
