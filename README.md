@@ -50,8 +50,7 @@ To see instructions on how to run the demo, click [here](DEMO.md).
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
 
-<iframe src="https://drive.google.com/file/d/1ZvL5P4deNLsipzVci7Zg_4PReqeX4EMU/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
-
+<iframe src="https://drive.google.com/file/d/1ZvL5P4deNLsipzVci7Zg_4PReqeX4EMU/preview" width="640" height="480" allow="autoplay"></iframe>
 
 
 ## Challenges in Simulation Environment Generation
@@ -111,7 +110,7 @@ Testing a circle trajectory path results in the estimated trajectory having a ra
 - RViz visualization tool used ot visualize camera pose published by VINS-Fusion
 - Circle estimated is much bigger than the one traversed.
 
-<iframe src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/preview" width="640" height="480" allow="autoplay"></iframe>
 
 The visualization shows nice feature tracking
 - Can see the optical flow arrows
@@ -120,7 +119,7 @@ The visualization shows nice feature tracking
    - The room doesn't have enough features to allow for feature tracking, we could improve the textures in the environment
    - Possible issues with the camera and IMU syncing due ot the use of simulation time
 
-<iframe src="https://drive.google.com/file/d/1uhqunABXjBGA-kyIfh_kT4TuZ4uiJOFr/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1uhqunABXjBGA-kyIfh_kT4TuZ4uiJOFr/preview" width="640" height="480" allow="autoplay"></iframe>
 
 ## Future Steps
 ![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/ce4a50c8-b223-4edd-8d99-22a3dc362c97)
