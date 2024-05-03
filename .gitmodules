@@ -1,3 +1,7 @@
 [submodule "AirVO_code/AirVO"]
 	path = AirVO_code/AirVO
 	url = https://github.com/srirama02/AirVO.git
+[submodule "VINS-Fusion_code/VINS-Fusion-ROS2"]
+	path = VINS-Fusion_code/VINS-Fusion-ROS2
+	url = https://github.com/Huzaifg/VINS-Fusion-ROS2.git
+	branch = no_cuda
