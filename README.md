@@ -51,7 +51,6 @@
 - Demo of the vehicle driving around in generated simulation environment
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
-<img width="690" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/a7453723-8a02-48f0-9412-67b79d1800b6">
 
 
 ## Challenges in Simulation Environment Generation
