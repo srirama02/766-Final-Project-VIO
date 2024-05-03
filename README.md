@@ -49,6 +49,9 @@ To see instructions on how to run the demo, click [here](DEMO.md).
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
 
+https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/2b58d1fd-8892-4416-89a5-30d390b79fef
+
+
 ## Challenges in Simulation Environment Generation
 
 ### Simulation Room Mesh
@@ -106,12 +109,20 @@ Testing a circle trajectory path results in the estimated trajectory having a ra
 - RViz visualization tool used ot visualize camera pose published by VINS-Fusion
 - Circle estimated is much bigger than the one traversed.
 
+
+https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/bcd524cd-4755-403f-bea0-98345abfba1d
+
+
 The visualization shows nice feature tracking
 - Can see the optical flow arrows
 - We think the performance currently isn't that good due to:
    - Possible bug in the camera parameters, might need to repeat calibration process
    - The room doesn't have enough features to allow for feature tracking, we could improve the textures in the environment
    - Possible issues with the camera and IMU syncing due ot the use of simulation time
+
+
+https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/3626549d-4dc1-4d00-b4c5-d51288870d38
+
 
 ## Future Steps
 ![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/ce4a50c8-b223-4edd-8d99-22a3dc362c97)
