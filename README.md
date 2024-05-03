@@ -1,4 +1,4 @@
-# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/f6f5edd0-a1ae-4377-a730-80cc6b6acc0c)# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
 #### By Sriram Ashokumar and Huzaifa Unjhawala
 
 ## Demo
@@ -12,13 +12,7 @@ To see instructions on how to run the demo, click [here](DEMO.md).
   - Models FOV and Radial distortion
   - Aperture Vignetting
 - Objective: To assess how good the camera sensor models are in Project Chrono for robotics applications.
-<img width="282" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/0610bf9a-226c-46ef-b324-b132e2a61416">
-
-<img width="249" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/61d1e842-fa87-4b2e-ab4f-a0205039bbff">
-
-<img width="249" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/937fa03c-ed7e-45a2-949f-844ac6d0a5db">
-
-<img width="178" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/e97d4322-3a4a-48d4-9774-76cf6ce3a580">
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/3fc60f87-fccf-4480-9ddd-5c1d0be91758)
 
 
 
@@ -55,7 +49,7 @@ To see instructions on how to run the demo, click [here](DEMO.md).
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
 
-<video src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" width=180/>
+<video src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" width=180/></video>
 
 
 ## Challenges in Simulation Environment Generation
@@ -97,6 +91,8 @@ Two algorithms were chosen from that group based on:
 - DBoW2 place recognition approach used for loop detection.
 - Connection between local sliding window and loop closure candidate through BRIEF descriptor matching with outlier rejection.
 - Only 4 DOF Pose Graph optimization since we have IMU which makes roll and pitch observable.
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/6b309bf6-05e0-45ef-865e-a37027b1d42d)
+
 
 ### AirVO
 - Utilizes both a learning-based front end and a traditional optimization backend.
@@ -104,6 +100,8 @@ Two algorithms were chosen from that group based on:
 - On the right images of the key frames the same point and line feature detection is performed.
 - Local bundle adjustment is performed to optimize the points, lines, and keyframe poses.
 - New line processing pipeline for VO that associates 2D lines with learning-based 2D points on the image.
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/0ab79f70-b594-40e9-a638-c2dca9f71613)
+
 
 ### VINS-Fusion Results
 Testing a circle trajectory path results in the estimated trajectory having a radius twice as big
@@ -112,13 +110,14 @@ Testing a circle trajectory path results in the estimated trajectory having a ra
 - Circle estimated is much bigger than the one traversed.
 
 The visualization shows nice feature tracking
-- Can seethe optical flow arrows
+- Can see the optical flow arrows
 - We think the performance currently isn't that good due to:
    - Possible bug in the camera parameters, might need to repeat calibration process
    - The room doesn't have enough features to allow for feature tracking, we could improve the textures in the environment
    - Possible issues with the camera and IMU syncing due ot the use of simulation time
 
 ## Future Steps
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/ce4a50c8-b223-4edd-8d99-22a3dc362c97)
 
 - Due to trouble with reality setup to run the software, we were unable to test in reality but aim to continue working to debug and fix those issues
 - Test in real Motion Capture room with newly calibrated cameras.
