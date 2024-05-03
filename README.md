@@ -3,6 +3,8 @@
 
 ## Demo
 To see instructions on how to run the demo, click [here](DEMO.md).
+Link to [Codebase](https://github.com/srirama02/766-Final-Project-VIO/blob/main/README.md)
+Link to [Slides](https://uwmadison.box.com/s/3bmxfq3sb8hvkx6lm3n0k9awg59j58u1)
 
 ## Goal
 
