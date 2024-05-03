@@ -50,13 +50,20 @@ To see instructions on how to run the demo, click [here](DEMO.md).
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
 
-Video is viewable in the readme: https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/f8a62c5f-da2d-428a-ba1c-be5d8118b6e4
+Video is viewable in the readme: 
+
+https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/f8a62c5f-da2d-428a-ba1c-be5d8118b6e4
 
 Or available [here](https://drive.google.com/file/d/1ZvL5P4deNLsipzVci7Zg_4PReqeX4EMU/view?usp=sharing)
 
-
-<iframe id="video" width="560" height="315" src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-
+<!DOCTYPE html>
+<html>
+<body>
+<div class="row video">
+  <iframe id="video" width="560" height="315" src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+</body>
+</html>
 
 
 
