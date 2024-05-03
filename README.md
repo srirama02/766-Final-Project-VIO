@@ -14,6 +14,8 @@ Link to [Slides](https://uwmadison.box.com/s/3bmxfq3sb8hvkx6lm3n0k9awg59j58u1)
   - Models FOV and Radial distortion
   - Aperture Vignetting
 - Objective: To assess how good the camera sensor models are in Project Chrono for robotics applications.
+
+In our lab, we develop a simulator called Project Chrono. Chrono includes a high-fidelity camera model that accounts for field of view (FOV), radial distortion, and aperture vignetting. However, to assess the accuracy of the camera sensor models in Project Chrono for robotics applications, we need to test them with various algorithms. In this project, we tested various visual odometry (VO) and visual-inertial odometry (VIO) algorithms to validate the performance of our simulated sensor by comparing it to that of a real sensor.
 ![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/3fc60f87-fccf-4480-9ddd-5c1d0be91758)
 
 
