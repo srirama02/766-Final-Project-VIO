@@ -23,6 +23,7 @@ To see instructions on how to run the demo, click [here](DEMO.md).
    - Ensures that pictures from the camera sensor look very similar to those from a real camera.
 2. **In-the-loop performance differences**:
    - Evaluate how the quality of the image generated affects the performance of downstream tasks, which is more relevant in robotics.
+  
 <img width="342" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/af83e6fe-ebdb-4d10-9848-911ff729a054">
 <img width="332" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/bdd3b572-72ad-48f6-a954-f10d77d159d5">
 
