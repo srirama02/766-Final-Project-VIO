@@ -1,6 +1,9 @@
 # Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
 #### By Sriram Ashokumar and Huzaifa Unjhawala
 
+## Demo
+To see instructions on how to run the demo, click [here](DEMO.md).
+
 ## Goal
 
 - We develop a simulator in our lab called Project Chrono.
