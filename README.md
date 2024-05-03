@@ -55,6 +55,8 @@ To see instructions on how to run the demo, click [here](DEMO.md).
 - The vehicle in the simulation has a stereo camera setup and the video also shows the depth map
 - The 3D mesh shown in the simulation is generated in Blender
 
+<video src="https://drive.google.com/file/d/1w-qtHO_yQONQF1vptkJVyebjOz41BCLy/view?usp=sharing" width=180/>
+
 
 ## Challenges in Simulation Environment Generation
 
