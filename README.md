@@ -1,4 +1,4 @@
-![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/b980edbd-e1ac-4483-9438-1d70596fb80d)# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
+# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
 #### By Sriram Ashokumar and Huzaifa Unjhawala
 
 ## Demo
