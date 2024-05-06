@@ -1,10 +1,10 @@
-# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/b980edbd-e1ac-4483-9438-1d70596fb80d)# Estimating the Sim2Real Gap for Camera Simulation With Existing Visual Odometry Algorithms as a Judge
 #### By Sriram Ashokumar and Huzaifa Unjhawala
 
 ## Demo
-To see instructions on how to run the demo, click [here](DEMO.md).
-Link to [Codebase](https://github.com/srirama02/766-Final-Project-VIO/blob/main/README.md)
-Link to [Slides](https://uwmadison.box.com/s/3bmxfq3sb8hvkx6lm3n0k9awg59j58u1)
+To see instructions on how to run the demo, click [here](DEMO.md).  
+Link to [Codebase](https://github.com/srirama02/766-Final-Project-VIO/blob/main/README.md)  
+Link to [Slides](https://uwmadison.box.com/s/3bmxfq3sb8hvkx6lm3n0k9awg59j58u1)  
 
 ## Goal
 In our lab, we develop a simulator called Project Chrono. Chrono includes a high-fidelity camera model that accounts for field of view (FOV), radial distortion, and aperture vignetting. However, to assess the accuracy of the camera sensor models in Project Chrono for robotics applications, we need to test them with various algorithms. In this project, we tested various visual odometry (VO) and visual-inertial odometry (VIO) algorithms to validate the performance of our simulated sensor by comparing it to that of a real sensor.
@@ -20,8 +20,8 @@ In our lab, we develop a simulator called Project Chrono. Chrono includes a high
 2. **In-the-loop performance differences**:
    - Evaluate how the quality of the image generated affects the performance of downstream tasks, which is more relevant in robotics.
   
-<img width="342" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/af83e6fe-ebdb-4d10-9848-911ff729a054">
-<img width="470" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/bdd3b572-72ad-48f6-a954-f10d77d159d5">
+<img width="342" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/af83e6fe-ebdb-4d10-9848-911ff729a054"> [1]
+<img width="470" alt="image" src="https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/bdd3b572-72ad-48f6-a954-f10d77d159d5"> [2]
 
 
 ## Our Evaluation Approach
@@ -88,8 +88,7 @@ Two algorithms were chosen from that group based on:
 - DBoW2 place recognition approach used for loop detection.
 - Connection between local sliding window and loop closure candidate through BRIEF descriptor matching with outlier rejection.
 - Only 4 DOF Pose Graph optimization since we have IMU which makes roll and pitch observable.
-![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/6b309bf6-05e0-45ef-865e-a37027b1d42d)
-
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/6b309bf6-05e0-45ef-865e-a37027b1d42d) [3]
 
 ### AirVO
 - Utilizes both a learning-based front end and a traditional optimization backend.
@@ -97,7 +96,7 @@ Two algorithms were chosen from that group based on:
 - On the right images of the key frames the same point and line feature detection is performed.
 - Local bundle adjustment is performed to optimize the points, lines, and keyframe poses.
 - New line processing pipeline for VO that associates 2D lines with learning-based 2D points on the image.
-![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/0ab79f70-b594-40e9-a638-c2dca9f71613)
+![image](https://github.com/srirama02/766-Final-Project-VIO/assets/71669451/0ab79f70-b594-40e9-a638-c2dca9f71613) [4]
 
 
 ### VINS-Fusion Results
@@ -124,5 +123,11 @@ The visualization shows nice feature tracking
 - Test in real Motion Capture room with newly calibrated cameras.
 - Debug and improve current setup, focusing on sim calibration, room textures, and camera/IMU sync.
 - Complete the AirVO ROS1 to ROS2 conversion to isolate issues specific to VINS.
+
+## References
+[1] https://www.youtube.com/watch?v=P1IcaBn3ej0  
+[2] Asher et.al. - Modeling Cameras for Autonomous Vehicle and Robot Simulation: An Overview – IEEE Sensors  
+[3] Qin et.al. - VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator- IEEE Transactions on Robotics  
+[4] Xu et.al. - AirVO: An Illumination-Robust Point-Line Visual Odometry - IROS  
 
 ## Thank You
